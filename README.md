@@ -4,12 +4,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>[Your School] MUN — 31 Oct & 1 Nov</title>
+  <title>[Global edge school,MDP] MUN — 31 Oct & 1 Nov</title>
   <meta name="description" content="Official website for the internal [Your School] Model United Nations (MUN) to be held on 31 October & 1 November." />
   <meta name="theme-color" content="#0f172a" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://forms.gle/gcxCrFbsD1n9YD5c7" rel="stylesheet" />
   <style>
     :root{
       --bg: #0b1020;        /* page background */
