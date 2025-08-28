@@ -2,329 +2,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>[Global edge school,MDP] MUN — 31 Oct & 1 Nov</title>
-  <meta name="description" content="Official website for the internal [Your School] Model United Nations (MUN) to be held on 31 October & 1 November." />
-  <meta name="theme-color" content="#0f172a" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://forms.gle/gcxCrFbsD1n9YD5c7" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TGES MDP MUN 2025</title>
   <style>
-    :root{
-      --bg: #0b1020;        /* page background */
-      --card:#0f172a;       /* card background */
-      --muted:#cbd5e1;      /* muted text */
-      --text:#e2e8f0;       /* main text */
-      --accent:#60a5fa;     /* accent */
-      --accent-2:#22d3ee;   /* secondary accent */
-      --ring: 0 10px 40px rgba(32,84,209,.25);
-      --radius: 16px;
-    }
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,"Noto Sans",sans-serif;background:linear-gradient(180deg,#0b1020 0%,#0b1020 30%,#0c1226 100%);color:var(--text);} 
-    a{color:inherit;text-decoration:none}
-    .container{max-width:1080px;margin-inline:auto;padding:24px}
-    .btn{display:inline-flex;align-items:center;gap:.6rem;padding:.9rem 1.2rem;border-radius:999px;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#001018;font-weight:700;box-shadow:var(--ring);transition:transform .15s ease,filter .15s ease}
-    .btn:hover{transform:translateY(-2px);filter:brightness(1.05)}
-    .btn.secondary{background:#111826;color:var(--text);border:1px solid #22314f;box-shadow:none}
-    header{position:sticky;top:0;backdrop-filter:saturate(180%) blur(10px);background:rgba(3,8,23,.6);border-bottom:1px solid rgba(148,163,184,.12);z-index:20}
-    .nav{display:flex;align-items:center;justify-content:space-between;gap:12px}
-    .brand{display:flex;align-items:center;gap:.8rem}
-    .brand-logo{width:40px;height:40px;border-radius:10px;background:radial-gradient(120% 120% at 20% 0%,#60a5fa,#22d3ee);box-shadow:0 8px 30px rgba(34,211,238,.35)}
-    .brand h1{font-size:1.05rem;margin:0;font-weight:800;letter-spacing:.2px}
-    .nav-links{display:flex;gap:1.1rem;align-items:center}
-    .nav-links a{color:var(--muted);font-weight:600}
-    .nav-links a:hover{color:#fff}
-    .mobile-toggle{display:none}
-
-    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:26px;align-items:center;padding:40px 0}
-    .card{background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.02));border:1px solid rgba(148,163,184,.12);border-radius:var(--radius);padding:24px;box-shadow:0 12px 60px rgba(0,0,0,.25)}
-    .pill{display:inline-flex;align-items:center;gap:.5rem;border:1px solid rgba(148,163,184,.2);border-radius:999px;padding:.35rem .7rem;color:var(--muted);font-weight:600}
-    .title{font-size:clamp(28px,4.2vw,54px);line-height:1.05;margin:16px 0 10px;font-weight:800}
-    .subtitle{font-size:clamp(14px,1.5vw,18px);color:var(--muted);margin:0 0 22px}
-    .kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-    .kpi{padding:14px;border-radius:12px;background:#0c162b;border:1px solid rgba(148,163,184,.15);text-align:center}
-    .kpi strong{display:block;font-size:1.2rem}
-
-    .countdown{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:16px}
-    .tile{padding:16px 10px;text-align:center;border:1px solid rgba(148,163,184,.15);background:#0b162c;border-radius:12px}
-    .tile span{display:block}
-    .lg{font-size:1.6rem;font-weight:800}
-    .sm{font-size:.8rem;color:var(--muted);letter-spacing:.4px}
-
-    section{padding:34px 0}
-    h2{margin:0 0 14px;font-size:1.6rem}
-    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-
-    .committee{display:flex;flex-direction:column;gap:10px}
-    .committee h3{margin:0;font-size:1.1rem}
-    .committee .meta{font-size:.9rem;color:var(--muted)}
-
-    .schedule table{width:100%;border-collapse:collapse}
-    .schedule th,.schedule td{border-bottom:1px dashed rgba(148,163,184,.2);padding:10px;text-align:left}
-    .schedule th{color:#cbd5e1;font-weight:700}
-
-    .faq details{background:#0e182e;border:1px solid rgba(148,163,184,.15);border-radius:12px;padding:14px}
-    .faq details+details{margin-top:10px}
-    .faq summary{cursor:pointer;font-weight:700}
-
-    .footer{padding:30px 0;color:#a8b1c5;border-top:1px solid rgba(148,163,184,.12)}
-    .footer small{display:block;margin-top:6px}
-
-    /* responsiveness */
-    @media (max-width: 880px){
-      .hero{grid-template-columns:1fr}
-      .grid{grid-template-columns:1fr;}
-      .nav-links{display:none}
-      .mobile-toggle{display:inline-flex;border:1px solid rgba(148,163,184,.2);border-radius:999px;padding:.5rem .7rem;color:var(--muted);font-weight:700}
-      .countdown{grid-template-columns:repeat(2,1fr)}
-    }
+    body { font-family: Arial, sans-serif; margin: 0; background: #f9fafb; color: #111; }
+    header { background: #0f172a; color: #fff; padding: 10px 20px; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; }
+    nav a { color: white; margin: 0 10px; text-decoration: none; font-weight: bold; }
+    section { padding: 40px 20px; max-width: 1000px; margin: auto; }
+    h1, h2, h3 { color: #0f172a; }
+    .btn { background: #2563eb; color: #fff; padding: 10px 20px; border-radius: 6px; text-decoration: none; display: inline-block; margin-top: 15px; }
+    .box { border: 2px solid #0f172a; display: inline-block; padding: 10px 20px; border-radius: 6px; margin-top: 10px; }
+    .secretariat img { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin: 10px; }
+    .secretariat div { display: inline-block; text-align: center; margin: 15px; }
+    .committee { background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0; }
+    footer { background: #0f172a; color: #fff; text-align: center; padding: 20px; margin-top: 30px; }
   </style>
 </head>
 <body>
-  <!-- ================= NAVBAR ================= -->
   <header>
-    <div class="container nav">
-      <a class="brand" href="#home" aria-label="Go to top">
-        <div class="brand-logo" aria-hidden="true"></div>
-        <h1 id="home">[Your School] MUN</h1>
-      </a>
-      <nav class="nav-links" aria-label="primary">
-        <a href="#about">About</a>
-        <a href="#committees">Committees</a>
-        <a href="#schedule">Schedule</a>
-        <a href="#resources">Resources</a>
-        <a href="#contact">Contact</a>
-        <a class="btn" href="#register">Register</a>
-      </nav>
-      <button class="mobile-toggle" aria-label="Open menu" onclick="document.querySelector('.drawer').showModal()">Menu</button>
-    </div>
+    <h2>TGES MDP MUN '25</h2>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#resources">Resources</a>
+      <a href="#secretariat">Secretariat</a>
+      <a href="#committees">Committees</a>
+      <a href="#allocation">Allocation Matrix</a>
+    </nav>
   </header>
 
-  <!-- mobile menu -->
-  <dialog class="drawer" style="background:#0b1226;border:1px solid rgba(148,163,184,.2);border-radius:12px;padding:18px;max-width:520px;width:90%">
-    <form method="dialog">
-      <h3 style="margin-top:0">Menu</h3>
-      <p><a href="#about">About</a></p>
-      <p><a href="#committees">Committees</a></p>
-      <p><a href="#schedule">Schedule</a></p>
-      <p><a href="#resources">Resources</a></p>
-      <p><a href="#contact">Contact</a></p>
-      <p><a class="btn" href="#register">Register</a></p>
-      <div style="text-align:right;margin-top:10px"><button class="btn secondary">Close</button></div>
-    </form>
-  </dialog>
-
-  <!-- ================= HERO ================= -->
-  <div class="container hero">
-    <div class="card">
-      <span class="pill">Internal Conference · On Campus</span>
-      <h2 class="title">[Your School] Model United Nations</h2>
-      <p class="subtitle">Join us for a two‑day debate and diplomacy experience on <strong>31 October</strong> & <strong>1 November</strong>. Open to students from classes <strong>VIII–XII</strong>. No prior MUN experience required!</p>
-      <div class="kpis">
-        <div class="kpi"><strong>2</strong><span class="sm">Days</span></div>
-        <div class="kpi"><strong>4+</strong><span class="sm">Committees</span></div>
-        <div class="kpi"><strong>Best Delegate</strong><span class="sm">Awards</span></div>
-      </div>
-      <div class="countdown" id="countdown" aria-live="polite"></div>
-      <div style="display:flex;gap:10px;margin-top:16px;flex-wrap:wrap">
-        <a class="btn" href="#register">Register Now</a>
-        <a class="btn secondary" href="#resources">View Resources</a>
-      </div>
-    </div>
-    <div class="card" style="background:radial-gradient(100% 120% at 0% 0%, rgba(34,211,238,.2), transparent 40%), linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));display:grid;place-items:center;min-height:280px">
-      <div style="text-align:center;max-width:420px">
-        <img alt="MUN Illustration" src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?q=80&w=1000&auto=format&fit=crop" style="width:100%;height:auto;border-radius:12px;border:1px solid rgba(148,163,184,.2)"/>
-        <p class="sm" style="margin-top:10px">Photo courtesy of Unsplash — replace with your school photo or logo.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- ================= ABOUT ================= -->
-  <section id="about">
-    <div class="container">
-      <div class="card">
-        <h2>About the Conference</h2>
-        <p>Our internal Model United Nations fosters public speaking, research, negotiation, and teamwork. Delegates will represent countries, draft resolutions, and collaborate to address global challenges in a respectful, academic setting.</p>
-        <p><strong>Venue:</strong> [Your School Name], [City]. <strong>Dates:</strong> 31 October & 1 November, <span id="year-label">[Year]</span>.</p>
-      </div>
-    </div>
+  <!-- HOME -->
+  <section id="home">
+    <h1>WELCOME TO THE TGES MDP MUN ’25</h1>
+    <h3>Engage. Debate. Lead</h3>
+    <a class="btn" href="https://forms.gle/gcxCrFbsD1n9YD5c7" target="_blank">Register Now</a>
+    <div class="box">DATE: 31st Oct & 1st Nov 2025</div>
   </section>
 
-  <!-- ================= COMMITTEES ================= -->
-  <section id="committees">
-    <div class="container">
-      <h2>Committees & Agendas</h2>
-      <div class="grid">
-        <div class="card committee">
-          <h3>UN General Assembly (DISEC)</h3>
-          <div class="meta">Agenda: Strengthening global frameworks against cyber warfare.</div>
-          <div class="meta">Bureau: Chair, Vice‑Chair, Rapporteur</div>
-          <a class="btn secondary" href="#register">Apply as Delegate</a>
-        </div>
-        <div class="card committee">
-          <h3>UN Security Council</h3>
-          <div class="meta">Agenda: Situation in the [Region] — immediate measures for ceasefire.</div>
-          <div class="meta">Bureau: President, Vice‑President</div>
-          <a class="btn secondary" href="#register">Apply as Delegate</a>
-        </div>
-        <div class="card committee">
-          <h3>WHO</h3>
-          <div class="meta">Agenda: Coordinated responses to emerging zoonotic diseases.</div>
-          <div class="meta">Bureau: Chair, Vice‑Chair</div>
-          <a class="btn secondary" href="#register">Apply as Delegate</a>
-        </div>
-        <div class="card committee">
-          <h3>UNESCO</h3>
-          <div class="meta">Agenda: Equitable access to digital education resources.</div>
-          <div class="meta">Bureau: Chair, Vice‑Chair</div>
-          <a class="btn secondary" href="#register">Apply as Delegate</a>
-        </div>
-        <div class="card committee">
-          <h3>Press Corps (IPC)</h3>
-          <div class="meta">Agenda: Live coverage and press conferences across committees.</div>
-          <div class="meta">Bureau: Editor‑in‑Chief</div>
-          <a class="btn secondary" href="#register">Apply as Journalist</a>
-        </div>
-        <div class="card committee">
-          <h3>Executive Board</h3>
-          <div class="meta">Applications for Chairs/Co‑Chairs for experienced MUNners.</div>
-          <a class="btn secondary" href="#register">Apply for EB</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= SCHEDULE ================= -->
-  <section id="schedule" class="schedule">
-    <div class="container">
-      <h2>Conference Schedule</h2>
-      <div class="card">
-        <h3>Day 1 — 31 October</h3>
-        <table aria-label="Day 1 schedule">
-          <thead><tr><th>Time</th><th>Activity</th><th>Location</th></tr></thead>
-          <tbody>
-            <tr><td>08:00 – 09:00</td><td>Registration & Allotments</td><td>School Auditorium</td></tr>
-            <tr><td>09:00 – 09:45</td><td>Opening Ceremony</td><td>Auditorium</td></tr>
-            <tr><td>10:00 – 13:00</td><td>Committee Session I</td><td>Respective Rooms</td></tr>
-            <tr><td>13:00 – 14:00</td><td>Lunch</td><td>Cafeteria</td></tr>
-            <tr><td>14:00 – 16:30</td><td>Committee Session II</td><td>Respective Rooms</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="card" style="margin-top:12px">
-        <h3>Day 2 — 1 November</h3>
-        <table aria-label="Day 2 schedule">
-          <thead><tr><th>Time</th><th>Activity</th><th>Location</th></tr></thead>
-          <tbody>
-            <tr><td>08:30 – 10:45</td><td>Committee Session III</td><td>Respective Rooms</td></tr>
-            <tr><td>11:00 – 12:30</td><td>Press Conferences</td><td>Auditorium</td></tr>
-            <tr><td>12:30 – 13:30</td><td>Lunch</td><td>Cafeteria</td></tr>
-            <tr><td>13:30 – 15:30</td><td>Committee Session IV</td><td>Respective Rooms</td></tr>
-            <tr><td>16:00 – 17:00</td><td>Closing & Awards</td><td>Auditorium</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= RESOURCES ================= -->
+  <!-- RESOURCES -->
   <section id="resources">
-    <div class="container">
-      <h2>Resources</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>Background Guides</h3>
-          <p>Download background guides for each committee. (Replace links below.)</p>
-          <ul>
-            <li><a href="#">DISEC BG (PDF)</a></li>
-            <li><a href="#">UNSC BG (PDF)</a></li>
-            <li><a href="#">WHO BG (PDF)</a></li>
-            <li><a href="#">UNESCO BG (PDF)</a></li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>Rules of Procedure</h3>
-          <p>Our ROP is a simplified hybrid of UN protocols, ideal for first‑time delegates.</p>
-          <p><a class="btn secondary" href="#">Download ROP (PDF)</a></p>
-        </div>
-        <div class="card">
-          <h3>Position Paper Template</h3>
-          <p>Use this template to structure your research and country stance.</p>
-          <p><a class="btn secondary" href="#">Download DOCX</a></p>
-        </div>
+    <h2>Message from the Secretary-General</h2>
+    <p><strong>Saanvi Reddy</strong><br/>Secretary-General<br/>TGES MDP MUN 2025–26</p>
+    <p>Dear Delegates,<br/>It is with great pride and excitement that I welcome you to the second edition of TGES MDP Model United Nations at Global Edge School, Madhapur... (full welcome text)</p>
+    <a class="btn" href="https://docs.google.com/document/d/1Xp1IWfCS4FXgaU4a59zr3EwbwzI_WSp-8ohrkI_KlZE/edit?usp=sharing" target="_blank">Code of Conduct</a>
+    <a class="btn" href="https://docs.google.com/document/d/1bk76_FPipz3qf8tkgf1AgYQRrvkaXXwIxkIt-7YNoDA/edit?usp=sharing" target="_blank">MUN Guide</a>
+  </section>
+
+  <!-- SECRETARIAT -->
+  <section id="secretariat">
+    <h2>Secretariat</h2>
+    <div class="secretariat">
+      <div>
+        <img src="saanvi.jpg" alt="Saanvi Reddy" />
+        <p>Saanvi Reddy<br/>Secretary-General</p>
+      </div>
+      <div>
+        <img src="Shravya EB.jpg" alt="Shravya Rayaprolu" />
+        <p>Shravya Rayaprolu<br/>Director-General</p>
+      </div>
+    </div>
+    <hr/>
+    <h3>Tech Team</h3>
+    <div class="secretariat">
+      <div>
+        <img src="rishika.jpg" alt="Rishika Chowdary" />
+        <p>Rishika</p>
+      </div>
+      <div>
+        <img src="tasvita.jpg" alt="Tasvita Manugunta" />
+        <p>Tasvita</p>
+      </div>
+    </div>
+    <hr/>
+    <h3>OC Heads</h3>
+    <div class="secretariat">
+      <div>
+        <img src="samhitha.jpg" alt="Samhitha Sahukaru" />
+        <p>Samhitha</p>
+      </div>
+      <div>
+        <img src="shreshta.jpg" alt="Shreshta Raghu" />
+        <p>Shreshta</p>
       </div>
     </div>
   </section>
 
-  <!-- ================= REGISTRATION ================= -->
-  <section id="register">
-    <div class="container">
-      <div class="card">
-        <h2>Registration</h2>
-        <p>Spots are limited. Submit the form below to apply as a delegate, journalist, or EB member. You’ll receive allotments by email.</p>
-        <!-- Replace the iframe src with your Google Form link -->
-        <iframe title="Registration Form" src="https://docs.google.com/forms/d/e/1FAIpQLSf-demo-form/viewform?embedded=true" width="100%" height="720" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-        <p class="sm" style="margin-top:10px">Don’t have Google Forms? Replace the iframe with a <a href="mailto:mun@your-school.edu">mailto</a> link or any other form service.</p>
-      </div>
+  <!-- COMMITTEES -->
+  <section id="committees">
+    <h2>Committees</h2>
+    <div class="committee">
+      <h3>DISEC</h3>
+      <p><strong>Committee Introduction:</strong> DISEC deals with issues of peace, security, and disarmament...</p>
+      <p><strong>Agenda:</strong> Discussing the Arms Trade Treaty (ATT)...</p>
+      <a class="btn" href="https://docs.google.com/document/d/10MZYRVFNFhTzEFwIb23TbtYPP4VD-oJabwxPa5xlMCA/edit?usp=sharing" target="_blank">Background Guide</a>
+    </div>
+    <div class="committee">
+      <h3>UNHRC</h3>
+      <p><strong>Committee Introduction:</strong> The Human Rights Council works to promote and protect human rights...</p>
+      <p><strong>Agenda:</strong> Human rights violations with emphasis on children and refugees.</p>
+      <a class="btn" href="https://docs.google.com/document/d/1-9CH-YFHT8Vp7w_SMHSd_UMvsc3iKe8Rdj6Td047N3o/edit?usp=sharing" target="_blank">Background Guide</a>
+    </div>
+    <div class="committee">
+      <h3>UNCSW</h3>
+      <p><strong>Committee Introduction:</strong> The UNCSW works to promote gender equality and women’s rights...</p>
+      <p><strong>Agenda:</strong> Promoting gender equality with emphasis on eradicating socio-economic differences.</p>
+      <a class="btn" href="https://docs.google.com/document/d/1GvwmEaPPCq46jGmio6EERG3U6gW-aBQXs4HPXMnxMaw/edit?usp=sharing" target="_blank">Background Guide</a>
+    </div>
+    <div class="committee">
+      <h3>WHO</h3>
+      <p><strong>Committee Introduction:</strong> WHO focuses on global health and cooperation between nations...</p>
+      <p><strong>Agenda:</strong> Evaluating effects of chemical exposure, waste management, and pollution on global health.</p>
+      <a class="btn" href="https://docs.google.com/document/d/11SdtfupIps5bYCaXoK35gNQrFA_P-ZKmaTPLtVx6Eto/edit?usp=sharing" target="_blank">Background Guide</a>
     </div>
   </section>
 
-  <!-- ================= CONTACT ================= -->
-  <section id="contact">
-    <div class="container">
-      <div class="card">
-        <h2>Contact</h2>
-        <p>Have questions? Reach us at <a href="mailto:mun@your-school.edu">mun@your-school.edu</a> or visit the Student Council room during recess.</p>
-        <div class="grid">
-          <div>
-            <h3>Secretariat</h3>
-            <ul>
-              <li>Secretary‑General — [Name]</li>
-              <li>Director‑General — [Name]</li>
-              <li>USG Academics — [Name]</li>
-            </ul>
-          </div>
-          <div>
-            <h3>Venue</h3>
-            <p>[Your School Name], [Street Address], [City]</p>
-            <p><a class="btn secondary" href="https://maps.google.com" target="_blank" rel="noopener">Open in Maps</a></p>
-          </div>
-          <div>
-            <h3>Social</h3>
-            <p><a href="#">Instagram</a> · <a href="#">YouTube</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
+  <!-- ALLOCATION -->
+  <section id="allocation">
+    <h2>Allocation Matrix</h2>
+    <p><a class="btn" href="https://docs.google.com/spreadsheets/d/1jPUQCrC6n_vRg0s-nd_gM9B0DQ9I-jgaq9NSlTf4Mco/edit?usp=sharing" target="_blank">View Allocation Matrix</a></p>
   </section>
 
-  <footer class="footer">
-    <div class="container">
-      <div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap">
-        <div>
-          <strong>[Your School] MUN</strong>
-          <small>© <span id="year">2025</span> — For educational use</small>
-        </div>
-        <div>
-          <small>Built with ♥ — <a href="https://github.com">GitHub Pages</a></small>
-        </div>
-      </div>
-    </div>
+  <footer>
+    <p>&copy; 2025 TGES MDP MUN — Global Edge School, Madhapur</p>
   </footer>
-
-  <script>
-    // ======== QUICK SETTINGS (edit these!) ========
-    const SCHOOL_NAME = "[Your School]";          // shown in title & headings
-    const YEAR = new Date().getFullYear();        // set to a specific year if needed
-    const EVENT_TZ = "Asia/Kolkata";              // timezone for countdown
-
-    // If your event is NEXT YEAR, set YEAR manually above.
-    // Dates: 31 Oct & 1 Nov of YEAR
-
-    document.title = `${SCHOOL_NAME} MUN — 31 Oct & 1 Nov`;
-    document.querySelector('h1').textContent = `${SCHOOL_NAME} MUN`;
-    document.getElementById('year').textContent = YEAR;
+</body>
+</html>
     document.getElement
